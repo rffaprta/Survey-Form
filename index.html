@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </head>
+  <body>
+    <form id="survey-form" method="post">
+      <label id="name-label"
+        >Name <input id="name" type="text" required placeholder="Name" />
+      </label>
+      <label id="email-label"
+        >Email
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Email"
+          name="email"
+        />
+      </label>
+      <label id="number-label"
+        >Age
+        <input
+          id="number"
+          type="number"
+          min="0"
+          max="120"
+          placeholder="0"
+          name="age"
+        />
+      </label>
+      <label for="referrer"
+        >Your Role
+        <select id="dropdown" id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">Web Dev</option>
+          <option value="2">Data Science</option>
+        </select>
+      </label>
+
+      Hello There!!
+      <label for="Hola">
+        <input
+          id="Hola"
+          type="radio"
+          value="Hola"
+          name="group1"
+          class="inline"
+        />
+        Hola
+      </label>
+      <label for="Hi">
+        <input id="Hi" type="radio" value="Hi" name="group1" class="inline" />
+        Hi
+      </label>
+
+      <label for="improve"
+        >What do you want to improve?
+        <label for="Web">
+          <input class="inline" type="checkbox" value="n" /> Web
+        </label>
+        <label for="Data">
+          <input class="inline" type="checkbox" value="kan" /> Data
+        </label>
+      </label>
+      <label for="hope"
+        >Your Hope:
+        <textarea
+          id="hope"
+          name="hope"
+          rows="3"
+          cols="30"
+          placeholder="Write your Hope here..."
+        >
+        </textarea>
+      </label>
+
+      <input id="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
